@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    justify-content: center;
+    display: grid;
+    border: 5px solid rgb(224, 209, 209);
+    width: 30%;
+    min-height: 30vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "one three five"
+        "one three five"
+        "one three five"
+        "two three six"
+        "two four six"
+        "two four six";
+}
+
+#child-1{
+    grid-area: one;
+    border: 4px solid rgb(224, 209, 209);
+}
+
+#child-2{
+    grid-area: two;
+    border: 4px solid rgb(224, 209, 209);
+}
+
+#child-3{
+    grid-area: three;
+    border: 4px solid rgb(224, 209, 209);
+}
+
+#child-4{
+    grid-area: four;
+    border: 4px solid rgb(224, 209, 209);
+}
+
+#child-5{
+    grid-area: five;
+    border: 4px solid rgb(224, 209, 209);
+}
+
+#child-6{
+    grid-area: six;
+    border: 4px solid rgb(224, 209, 209);
+}
